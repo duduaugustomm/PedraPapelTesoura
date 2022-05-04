@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgEscolhaApp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/padrao"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewEscolhaApp"
+        android:layout_width="156dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="4dp"
+        android:text="Escolha do Aplicativo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgEscolhaApp"
+        app:layout_constraintVertical_bias="0.014"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="102dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sua Escolha"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnPapel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textVS"
+        android:layout_width="226dp"
+        android:layout_height="30dp"
+        android:text="VS"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscolhaApp"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <Button
+        android:id="@+id/btnRecomecar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:shadowColor="@color/white"
+        android:text="Recomeçar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        app:iconTint="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPapel"
+        app:layout_constraintVertical_bias="0.206"
+        app:rippleColor="@color/white"
+        app:strokeColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnPapel"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="196dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnTesoura"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toEndOf="@+id/btnPedra"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageButton
+        android:id="@+id/btnPedra"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="196dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pedra" />
+
+    <ImageButton
+        android:id="@+id/btnTesoura"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="196dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tesoura" />
+
+    <TextView
+        android:id="@+id/pontosApp"
+        android:layout_width="67dp"
+        android:layout_height="31dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pontosUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscolhaApp"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TextView
+        android:id="@+id/pontosUser"
+        android:layout_width="67dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="52dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
