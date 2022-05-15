@@ -97,35 +97,38 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(escolhaUser == 0 && escolhaApp == 2 || escolhaUser == 2 && escolhaApp == 0){
             //pedra sempre vence / idice pedra = 0
-            teste.setText("Pedra Venceu!");
 
             if(escolhaUser == 0){
                 pontuacaoUser ++;
+                teste.setText("Você Venceu!");
             }//teste quem ganhou
             if(escolhaApp == 0){
                 pontuacaoApp ++;
+                teste.setText("Você Perdeu!");
             }
         }
         else if(escolhaUser == 0 && escolhaApp == 1 || escolhaUser == 1 && escolhaApp == 0){
             //papel sempre vence / indice papel = 1
-            teste.setText("Papel Venceu!");
 
             if(escolhaUser == 1){
                 pontuacaoUser++;
+                teste.setText("Você Venceu!");
             }//teste quem ganhou
             if(escolhaApp == 1){
                 pontuacaoApp++;
+                teste.setText("Você Perdeu!");
             }
         }
         else if(escolhaUser == 1 && escolhaApp == 2 || escolhaUser == 2 && escolhaApp == 1){
             //tesoura sempre vence
-            teste.setText("Tesoura Venceu!");
 
             if(escolhaUser == 2){
                pontuacaoUser++;
+               teste.setText("Você Venceu!");
             }//teste quem ganhou
             if(escolhaApp == 2){
                 pontuacaoApp++;
+                teste.setText("Você Perdeu!");
             }
         }
         pontuacao();
